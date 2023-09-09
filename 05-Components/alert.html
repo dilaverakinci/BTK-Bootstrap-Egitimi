@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Bootstrap Alert</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class=" alert alert-primary">
+            <p>Basit bir birincil uyarı - kontrol et!</p>
+        </div>
+        <div class="alert alert-secondary ">
+            <p>Basit bir ikincil uyarı- Kontrol et</p>
+        </div>
+        <div class="alert alert-danger">
+            <p>Basit bir tehlike uyarısı - kontrol edin!</p>
+        </div>
+        <p class=" alert alert-dark">Basit bir karanlık mod uyarısı - kontrol edin!</p>
+
+        <div class="alert alert-success m-5" role="alert">
+
+            <h4 class=" alert-heading">
+                Uyarı Metni Başlığı
+            </h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus.</p>
+            <hr>
+            <p class=" mb-0 ">Lorem ipsum dolor sit amet.</p>
+
+        </div>
+
+
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Uyarıyı Göster</button>
+
+        <div class="alert alert-warning alert-dismissible fade show mt-3 " role="alert">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad doloribus maxime voluptas magnam dolores nisi
+                sapiente blanditiis, beatae sit, dolorem alias doloremque. Libero ex voluptates error neque distinctio,
+                eum totam porro suscipit, atque odit aliquid provident nulla cumque saepe quos illum. Voluptatem, fugit
+                ullam quis architecto perspiciatis laborum repellat voluptatum!
+            </p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('Nice, you triggered this alert message!', 'success')
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Checks&Radio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4 mx-auto">
+                <form action="">
+                    <!-- Onay Kutuları Checkboxes -->
+                    <div class="mb-3 form-check">
+                        <h3 style="text-decoration: underline;">Onay Kutuları Checkboxes</h3>
+                        <input type="checkbox" class="form-check-input" id="check-1" checked>
+                        <label for="check-1" class=" form-check-label ">
+                            Varsayılan olarak işaretli Onay Kutusu (Checkbox)
+                        </label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check-2">
+                        <label for="check-2" class="form-check-label">Normal Onay Kutusu (Checkbox)</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check-3" disabled>
+                        <label for="check-3" class="form-check-label">Pasif Onay Kutusu (Checkbox)</label>
+                    </div>
+
+                    <hr class="border border-danger opacity-100 ">
+                    <!-- Radio Seçenek Kutuları -->
+                    <div class="form-check mb-3">
+                        <h3 style="text-decoration: underline;">Radio Seçenek Kutuları</h3>
+                        <input class="form-check-input" type="radio" name="radiocheck" id="radio-1">
+                        <label class=" form-check-label" for="radio-1">
+                            Radio Düğmesi 1
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input " type="radio" name="radiocheck" id="radio-2" checked>
+                        <label class="form-check-label" for="radio-2">
+                            Varsayılan olarak seçili Radio dümesi 2
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input " type="radio" name="radiocheck" id="radio-3" disabled>
+                        <label class="form-check-label" for="radio-3">
+                            Pasif Radio Düğmesi 3
+                        </label>
+                    </div>
+                    <hr class="border border-danger opacity-100 ">
+                    <!-- Anahtar Onay Kutuları -->
+                    <div class=" form-check form-switch">
+                        <h3 style="text-decoration: underline;">Anahtar Onay Kutuları</h3>
+                        <input class="form-check-input" type="checkbox" role="switch" id="switch-1"
+                            aria-checked="false">
+                        <label class="form-check-label" for="switch-1">
+                            Varsayılan Anahtar Onay Kutusu (Checkbox)
+                        </label>
+                    </div>
+
+                    <div class=" form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="switch-2" aria-checked="true"
+                            checked>
+                        <label class="form-check-label" for="switch-2">
+                            İşaretli Anahtar Onay Kutusu (Checkbox)
+                        </label>
+                    </div>
+
+                    <div class=" form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="switch-3" aria-checked="true"
+                            checked disabled>
+                        <label class="form-check-label" for="switch-3">
+                            Pasif ve İşaretli Anahtar Onay Kutusu (Checkbox)
+                        </label>
+                    </div>
+
+                    <hr class="border border-danger opacity-100 ">
+            </div>
+            </form>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

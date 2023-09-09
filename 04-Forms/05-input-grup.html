@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Bootstrap Range</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <p>Bir girişin her iki tarafına bir eklenti veya düğme yerleştirin. Ayrıca girişin her iki tarafına da birer
+            tane yerleştirebilirsiniz.<b>
+                < label>
+            </b> etiketlerini giriş grubunun dışına yerleştirmeyi unutmayın.</p>
+
+        <div class="input-group mb-3">
+            <div class="input-group-text" id="kullaniciismi">@</div>
+            <input type="text" class=" form-control" placeholder="Kullanıcı Adınız" aria-label="Kullanıcıadi"
+                aria-describedby="kullaniciismi">
+        </div>
+
+        <hr class=" border border-2 border-warning opacity-100">
+
+        <div class="input-group mb-2">
+            <input 
+                class="form-control"  
+                type="text" 
+                placeholder="mail adresiniz" 
+                aria-label="Kullanıcı Adı"
+                aria-describedby="kullanıcıadi" 
+                style="text-align:end" />
+            <span class="input-group-text" id="kullanıcıadi">@gmail.com</span>
+        </div>
+
+        <hr class=" border border-2 border-warning opacity-100">
+        <div class="mb-3">
+            <label for="basic-url" class="form-label">URL Adresi</label>
+            <div class="input-group">
+                <span class=" input-group-text " id="basic-url-1">http://github.com/</span>
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    id="basic-url" 
+                    aria-describedby="basic-url-1 urladresi">
+            </div>
+            <div class="form-text" id="urladresi">Lütfen github adresinizi yukarıdaki kutuya giriniz.</div>
+        </div>
+        <hr class=" border border-2 border-warning opacity-100">
+
+        <div class="input-group mb-3" style="width:200px">
+            <span class=" input-group-text">$</span>
+            <input type="text" class=" form-control" aria-label="Tutarı (Yaklaşık olarak)" name="" id="tutar">
+            <span class=" input-group-text ">.00</span>
+        </div>
+        <hr class=" border border-2 border-warning opacity-100">
+
+        <div class="mb-3">
+            <label for="isim">e-mail Adresiniz</label>
+            <div class="input-group">
+                <input type="text" class="form-control form-control-sm" name="isim" id="isim"
+                    placeholder="Kullanıcı Adınız" />
+                <span class=" input-group-text ">@</span>
+                <input type="text" class="form-control" name="server" id="servername"
+                    placeholder="server (gmail, outlook)" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
