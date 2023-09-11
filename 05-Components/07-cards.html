@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Bootstrap Breadcrumbs</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- "https://placehold.co/50x50/orange/green?text=Bootstrap+\nCard&font=raleway" -->
+
+  <body>
+    <div class="container p-3 m-auto">
+      <!-- Aşağıda karışık içerikli ve sabit genişliğe sahip temel bir kart örneği verilmiştir.  -->
+      <div class="card" style="width: 16rem;">
+        <img
+          src="https://placehold.co/50x50/orange/green?text=Bootstrap+\nCard+\nPlaceholder&font=raleway"
+          class="card-img-top"
+          alt="Placeholder"
+        />
+        <div class="card-body">
+          <h6 class="card-title">
+            Başlık
+          </h6>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Accusantium, quidem?
+          </p>
+          <a href="#" class="btn btn-success">Okumaya Devam et... </a>
+        </div>
+      </div>
+      <hr class="border border-dark border-1 opacity-100" />
+      <!--
+        Kartlar; resimler, metinler, liste grupları, bağlantılar ve daha fazlasını 
+        içeren çok çeşitli içeriği destekler. Aşağıda nelerin desteklendiğine dair örnekler verilmiştir.
+        -->
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione,
+            illo ducimus aspernatur deserunt mollitia ullam cum. Commodi nihil
+            tenetur saepe.
+          </p>
+        </div>
+      </div>
+      <hr class="border border-dark border-1 opacity-100" />
+      <!-- Yukarıda sadece bir text içeren card oluşturulmuş.-->
+      <div class="card" style="width: 16rem;">
+        <div class="card-body">
+          <div class="h4 card-title">Kart Başlığı</div>
+          <div class="h6 card-subtitle mb-2 text-body-secondary">
+            Kart alt başlığı
+          </div>
+          <p class="card-text">
+            Kart başlığını oluşturmak ve kartın içeriğinin çoğunu oluşturmak
+            için örnek metinler.
+          </p>
+          <a href="#" class="card-link">Birinci Link</a>
+          <a href="#" class="card-link">İkinci Link</a>
+        </div>
+      </div>
+
+      <hr class="border border-danger border-1 opacity-100" />
+
+      <div class="card" style="width: 16rem;">
+        <img
+          src="https://placehold.co/50x50/Gray/black?text=Bootstrap+\nCard+\nPlaceholder&font=raleway"
+          class="card-img-top"
+          alt="Placeholder"
+        />
+        <!-- Card Image - Resim eklemek için kullanılan özelliktir. Birden fazla image eklenebilir.-->
+        <div class="card-body">
+          <p class="card-text">
+            Kart başlığını oluşturmak ve kartın içeriğinin çoğunu oluşturmak
+            için örnek metinler.
+          </p>
+        </div>
+      </div>
+
+      <hr class="border border-danger border-1 opacity-100" />
+
+      <!-- Kartlarda listeleride kullanabiliriz-->
+      <div class="row">
+        <div class="col-3">
+          <!-- ------------------------------------ -->
+          <div class="card">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Liste Öğesi 1</li>
+              <li class="list-group-item">Liste Öğesi 2</li>
+              <li class="list-group-item">Liste Öğesi 3</li>
+              <li class="list-group-item">Liste Öğesi 4</li>
+            </ul>
+          </div>
+          <!-- ------------------------------------ -->
+        </div>
+        <!-- Kartlarda listelere başlık ve alt bilgi eklenebilir.-->
+        <div class="col-3">
+          <!-- ------------------------------------ -->
+          <div class="card">
+            <h6 class="card-header">Öne Çıkanlar</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Liste Öğesi 1</li>
+              <li class="list-group-item">Liste Öğesi 2</li>
+              <li class="list-group-item">Liste Öğesi 3</li>
+              <li class="list-group-item">Liste Öğesi 4</li>
+            </ul>
+          </div>
+          <!-- ------------------------------------ -->
+        </div>
+
+        <div class="col-3">
+          <!-- ------------------------------------ -->
+          <div class="card">
+            <h6 class="card-header">Öne Çıkanlar</h6>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Liste Öğesi 1</li>
+              <li class="list-group-item">Liste Öğesi 2</li>
+              <li class="list-group-item">Liste Öğesi 3</li>
+              <li class="list-group-item">Liste Öğesi 4</li>
+            </ul>
+            <div class="small card-footer">
+              Alt bilgi için oluşturulan metinler.
+            </div>
+          </div>
+          <!-- ------------------------------------ -->
+        </div>
+      </div>
+
+      <hr class="border border-danger border-1 opacity-100" />
+      <!--
+        İhtiyacınız olan kartı oluşturmak için birden fazla içerik türünü karıştırıp eşleştirin veya 
+        her şeyi oraya atın. Aşağıda tümü sabit genişlikte bir karta sarılmış görüntü stilleri, bloklar, 
+        metin stilleri ve bir liste grubu gösterilmektedir.
+      -->
+
+      <div class="card" style="width:20rem">
+        <img
+          src="https://placehold.co/50x50/Gray/black?text=Bootstrap+\nCard+\nPlaceholder&font=raleway"
+          class="card-img-top"
+          alt="Placeholder"
+        />
+        <div class="card-body">
+          <h6 class="card-title">Card Başlığı</h6>
+          <p class="card-text">
+            Kart başlığını oluşturmak ve kartın içeriğinin çoğunu oluşturmak
+            için örnek metinler.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Liste Öğesi 1</li>
+          <li class="list-group-item">Liste Öğesi 2</li>
+          <li class="list-group-item">Liste Öğesi 3</li>
+          <li class="list-group-item">Liste Öğesi 4</li>
+        </ul>
+        <div class="card-body">
+          <a class="card-link" href="#">Link 1</a>
+          <a class="btn btn-primary" href="#">Link 2</a>
+        </div>
+      </div>
+      <hr class="border border-danger border-1 opacity-100" />
+      
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
