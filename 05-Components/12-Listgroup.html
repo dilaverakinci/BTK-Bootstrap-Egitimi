@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Bootstrap List Group</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="row m-3">
+        <div class="col-4">
+            <h4 class=" text-center ">Temel Liste Grubu</h4>
+            <ul class="list-group">
+                <li class="list-group-item">Liste öğesi 1</li>
+                <li class="list-group-item">Liste öğesi 2</li>
+                <li class="list-group-item">Liste öğesi 3</li>
+                <li class="list-group-item">Liste öğesi 4</li>
+                <li class="list-group-item">Liste öğesi 5</li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h4 class=" text-center text-bg-warning">Aktif öğeli Liste</h4>
+            <ul class="list-group">
+                <li class="list-group-item active">Liste öğesi 1</li>
+                <li class="list-group-item">Liste öğesi 2</li>
+                <li class="list-group-item">Liste öğesi 3</li>
+                <li class="list-group-item">Liste öğesi 4</li>
+                <li class="list-group-item">Liste öğesi 5</li>
+            </ul>
+        </div>
+        <div class="col-4">
+            <h4 class=" text-center text-bg-secondary">Aktif öğeli ve Pasif (Disabled) öğeli Liste</h4>
+            <ul class="list-group">
+                <li class="list-group-item active">Liste öğesi 1</li>
+                <li class="list-group-item">Liste öğesi 2</li>
+                <li class="list-group-item disabled">Liste öğesi 3</li>
+                <li class="list-group-item">Liste öğesi 4</li>
+                <li class="list-group-item">Liste öğesi 5</li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+    <div class="row m-3">
+        <div class="col-4">
+            <h5>Eylemli liste grup öğeleri oluşturmak için < a> veya < button> kullanarak .list-group-item-action
+                        ekleyerek,
+                        üzerine gelme, devre dışı bırakma ve etkin durumlar için özellikler ekleyebilirsiniz. </h5>
+            <div class="list-group">
+                <a class=" list-group-item list-group-item-action " href="#">Liste öğesi link 1</a>
+                <a class=" list-group-item list-group-item-action active" href="#">Liste öğesi link 2</a>
+                <a class=" list-group-item list-group-item-action " href="#">Liste öğesi link 3</a>
+                <a class=" list-group-item list-group-item-action " href="#">Liste öğesi link 4</a>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <h5>Eylemli liste grup öğeleri oluşturmak için < a> veya < button> kullanarak .list-group-item-action
+                        ekleyerek,
+                        üzerine gelme, devre dışı bırakma ve etkin durumlar için özellikler ekleyebilirsiniz. </h5>
+            <div class="list-group">
+                <button type="button" class=" list-group-item list-group-item-action active">Liste Öğesi Button
+                    1</button>
+                <button type="button" class=" list-group-item list-group-item-action">Liste Öğesi Button 2</button>
+                <button type="button" class=" list-group-item list-group-item-action disabled ">Liste Öğesi Button
+                    3</button>
+                <button type="button" class=" list-group-item list-group-item-action">Liste Öğesi Button 4</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row m-3">
+        <div class="col-4">
+            <div>
+                <ol class=" list-group list-group-numbered">
+                    <li class="list-group-item">Liste öğesi</li>
+                    <li class="list-group-item">Liste öğesi</li>
+                    <li class="list-group-item">Liste öğesi</li>
+                    <li class="list-group-item">Liste öğesi</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div>
+                <ol class=" list-group list-group-numbered">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Başlık</div>
+                            Liste-1 öğesi için metinler...
+                        </div>
+                        <span class="badge bg-primary rounded-pill">5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Başlık</div>
+                            Liste-2 öğesi için metinler...
+                        </div>
+                        <span class="badge bg-primary rounded-pill">12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold">Başlık</div>
+                            Liste-3 öğesi için metinler...
+                        </div>
+                        <span class="badge bg-primary rounded-pill">8</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <h5>Yatay Liste Grubu</h5>
+            <ol class=" list-group list-group-horizontal">
+                <li class="list-group-item list-group-item-danger text-dark">Liste öğesi 1</li>
+                <li class="list-group-item list-group-item-success ">Liste öğesi 2</li>
+                <li class="list-group-item list-group-item-info ">Liste öğesi 3</li>
+            </ol>
+        </div>
+        <div class="col">
+            <h5>İçerik listesi</h5>
+            <div class="list-group w-50">
+                <a href="#" class=" list-group-item list-group-item-action active" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Liste Öğesi Başlığı</h5>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-1">liste öğesi için açıklayıcı özet içerik.</p>
+                    <small>Küçük alt bilgi için metin</small>
+                </a>
+                <a href="#" class=" list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Liste Öğesi Başlığı</h5>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-1">liste öğesi için açıklayıcı özet içerik.</p>
+                    <small>Küçük alt bilgi için metin</small>
+                </a>
+                <a href="#" class=" list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Liste Öğesi Başlığı</h5>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-1">liste öğesi için açıklayıcı özet içerik.</p>
+                    <small>Küçük alt bilgi için metin</small>
+                </a>
+                <a href="#" class=" list-group-item list-group-item-action" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Liste Öğesi Başlığı</h5>
+                        <small>3 gün önce</small>
+                    </div>
+                    <p class="mb-1">liste öğesi için açıklayıcı özet içerik.</p>
+                    <small>Küçük alt bilgi için metin</small>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row w-50">
+        <div class="col w-25">
+            <h5>Checkbox ile list-group</h5>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" name="onaykutusu1" id="onaykutusu1">
+                    <label for="onaykutusu1" class="form-check-label stretched-link">Onay Kutusu 1</label>
+                </li>
+                <li class="list-group-item">
+                    <input class=" form-check-input me-1" type="checkbox" name="onaykutusu1" id="onaykutusu2">
+                    <label for="onaykutusu2" class="form-check-label stretched-link">Onay Kutusu 2</label>
+                </li>
+                <li class="list-group-item">
+                    <input class=" form-check-input me-1" type="checkbox" name="onaykutusu1" id="onaykutusu3">
+                    <label for="onaykutusu3" class="form-check-label stretched-link">Onay Kutusu 3</label>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="col w-25">
+            <h5>Radio buttonlar ile list-group</h5>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <input class="form-check-input me-1" type="radio" name="radiobutton" id="radyokutusu1">
+                    <label for="radyokutusu1" class="form-check-label stretched-link">Onay Kutusu 1</label>
+                </li>
+                <li class="list-group-item">
+                    <input class=" form-check-input me-1" type="radio" name="radiobutton" id="radyokutusu2">
+                    <label for="radyokutusu2" class="form-check-label stretched-link">Onay Kutusu 2</label>
+                </li>
+                <li class="list-group-item">
+                    <input class=" form-check-input me-1" type="radio" name="radiobutton" id="radyokutusu3">
+                    <label for="radyokutusu3" class="form-check-label stretched-link">Onay Kutusu 3</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <br><br>
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
